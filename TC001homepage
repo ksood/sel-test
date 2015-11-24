@@ -1,0 +1,17 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class Homepage {
+
+	public static void main(String[] args) {
+		WebDriver driver =new FirefoxDriver();
+		driver.get("http://dashboard.parard.com");
+		driver.findElement(By.id("UsernameTextBox")).sendKeys("ksood");
+		driver.findElement(By.id("PasswordTextBox")).sendKeys("D00sK");
+		driver.findElement(By.xpath(".//*[@id='login']/form/fieldset/p[7]/input")).click();
+			
+		
+		
+	}
+
+}
